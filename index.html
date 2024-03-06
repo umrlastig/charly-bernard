@@ -1,219 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>LASTIG - Charly Bernard - Homepage</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i">
-  <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
-  <link rel="stylesheet" href="vendor/academicons/css/academicons.min.css"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
-
-  <!-- Custom styles for this template -->
-  <link href="css/animate.css" rel="stylesheet">
-  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-  <link href="css/resume.css" rel="stylesheet">
-  <link href="css/extras.css" rel="stylesheet">
-
-  <!-- scripts on load -->
-  <script src="vendor/d3/d3.min.js"></script>
-  <script src="js/reviewing.js" charset="utf-8"></script>
-  <script src="js/hal.js" charset="utf-8"></script>
-
-</head>
-
-<body id="page-top" onload="reviewingVis('reviewing.json'); getPublicationsAuthor('charly-bernard');">
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <select class="selectpicker" data-width="fit">
-      <option data-content='<span class="flag-icon flag-icon-us"></span>'>English</option>
-      <option data-content='<span class="flag-icon flag-icon-fr"></span>'>Français</option>
-    </select>
-    <a class="nav-link text-muted subheading" href="/website">LASTIG</a>
-    <a class="nav-link text-muted subheading" href="/strudel">STRUDEL</a>
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">Charly Bernard</span>
-      <!--
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/xxx.png" alt="">
-      </span>
-    -->
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger lang-en" href="#about">About</a>
-          <a class="nav-link js-scroll-trigger lang-fr" href="#about">Présentation</a>
-        </li>
-        <!--
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger lang-en" href="#interest">Research Interests</a>
-          <a class="nav-link js-scroll-trigger lang-fr" href="#interest">Sujets de recherche</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger lang-en" href="#news">News</a>
-          <a class="nav-link js-scroll-trigger lang-fr" href="#news">Actualités</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger lang-en" href="#experience">Experience</a>
-          <a class="nav-link js-scroll-trigger lang-fr" href="#experience">Parcours professionnel</a>
-        </li>
-      -->
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger lang-en" href="#education">Education</a>
-          <a class="nav-link js-scroll-trigger lang-fr" href="#education">Formation</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger lang-en" href="#publications">Publications</a>
-          <a class="nav-link js-scroll-trigger lang-fr" href="#publications">Publications</a>
-        </li>
-        <!--
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger lang-en" href="#projects">Projects</a>
-          <a class="nav-link js-scroll-trigger lang-fr" href="#projects">Projets</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger lang-en" href="#other">Other research activities</a>
-          <a class="nav-link js-scroll-trigger lang-fr" href="#other">Autres activités de recherche</a>
-        </li>
-      -->
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container-fluid p-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-      <div class="w-100">
-        <h1 class="mb-0">Charly
-          <span class="text-primary">Bernard</span>
-        </h1>
-        <div class="subheading mb-5">73 avenue de Paris · 94165 Saint-Mandé CEDEX · (+33)1 43 98 80 00 ·
-          <a>charly.bernard@ign.fr</a>
-        </div>
-        <p class="lead mb-5 lang-en">Research and Study Engineer</p>
-        <p class="lead mb-5 lang-en">Member of the <a href="/strudel">STRUDEL</a> research team</p>
-        <p class="lead mb-5 lang-fr">Ingénieur d'étude et de recherche.</p>
-        <p class="lead mb-5 lang-fr">Membre de l'équipe <a href="">STRUDEL</a></p>
-        <div class="social-icons">
-          <!--
-          <a href="#">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="#">
-            <i class="ai ai-researchgate"></i>
-          </a>
-        -->
-          <a href="https://github.com/charlybernard">
-            <i class="fab fa-github"></i>
-          </a>
-          <!--
-          <a href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#">
-            <i class="ai ai-google-scholar"></i>
-          </a>
-          <a href="#">
-            <i class="ai ai-publons"></i>
-          </a>
-          <a href="#">
-            <i class="ai ai-orcid"></i>
-          </a>
-          <a href="#">
-            <i class="ai"><img src="img/icons/hal-b2.svg" width=45px/></i>
-          </a>
-        -->
-        </div>
-      </div>
-    </section>
-
-<hr class="m-0">
-
-<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
-  <div class="w-100">
-    <h2 class="mb-5">Education</h2>
-
-    <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-      <div class="resume-content">
-        <h3 class="mb-0">ENSG</h3>
-        <div class="subheading mb-3 lang-en">Engineering school</div>
-        <div class="subheading mb-3 lang-fr">École d'ingénieurs</div>
-        <div class="lang-en">Geographical Information Science with emphasis in spatial analysis and cartography</div>
-        <div class="lang-fr">Géomatique avec spécialisation en SIG, analyse spatiale et représentation cartographique</div>
-      </div>
-      <div class="resume-date text-md-right">
-        <span class="text-primary lang-en">September 2016 - September 2019</span>
-        <span class="text-primary lang-fr">Septembre 2016 - Septembre 2019</span>
-      </div>
-    </div>
-
-    <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-      <div class="resume-content">
-        <h3 class="mb-0">ENSG / Université Paris 1 / Université Paris 7</h3>
-        <div class="subheading mb-3 lang-en">Carthagéo master</div>
-        <div class="subheading mb-3 lang-fr">Master Carthagéo</div>
-        <div class="lang-en">Master in Geographical Information Systems, spatial analysis and cartography</div>
-        <div class="lang-fr">Master en SIG, analyse spatiale et représentation cartographique</div>
-      </div>
-      <div class="resume-date text-md-right">
-        <span class="text-primary lang-en">September 2018 - September 2019</span>
-        <span class="text-primary lang-fr">Septembre 2018 - Septembre 2019</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="publications">
-      <div class="w-100">
-        <h2 class="mb-5">Publications</h2>
-
-        <span id="pubACL"><div class="subheading mb-3 mt-3 lang-en">[ACL] Journals</div><div class="subheading mb-3 mt-3 lang-fr">[ACL] Revues répertoriées par l'HCERES</div></span>
-        <span id="pubACLN"><div class="subheading mb-3 mt-3 lang-en">[ACLN] Journals</div><div class="subheading mb-3 mt-3 lang-fr">[ACLN] Revues non répertoriées</div></span>
-        <span id="pubASCL"><div class="subheading mb-3 mt-3 lang-en">[ASCL] Others</div><div class="subheading mb-3 mt-3 lang-fr">[ASCL] Revues sans comité de lecture</div></span>
-        <span id="pubACTI"><div class="subheading mb-3 mt-3 lang-en">[ACTI] Conferences</div><div class="subheading mb-3 mt-3 lang-fr">[ACTI] Conférences internationales</div></span>
-        <span id="pubACTN"><div class="subheading mb-3 mt-3 lang-en">[ACTN] Conferences</div><div class="subheading mb-3 mt-3 lang-fr">[ACTN] Conférences nationales</div></span>
-        <span id="pubCOM"><div class="subheading mb-3 mt-3 lang-en">[COM] Conferences</div><div class="subheading mb-3 mt-3 lang-fr">[COM] Communications orales</div></span>
-        <span id="pubOS"><div class="subheading mb-3 mt-3 lang-en">[OS] Books and Chapters</div><div class="subheading mb-3 mt-3 lang-fr">[OS] Ouvrages ou chapitres d'ouvrages scientifiques</div></span>
-        <span id="pubDO"><div class="subheading mb-3 mt-3 lang-en">[DO] Books and Chapters</div><div class="subheading mb-3 mt-3 lang-fr">[DO] Directions d'ouvrages scientifiques</div></span>
-        <span id="pubAFF"><div class="subheading mb-3 mt-3 lang-en">[AFF] Posters</div><div class="subheading mb-3 mt-3 lang-fr">[AFF] Posters</div></span>
-        <span id="pubAP"><div class="subheading mb-3 mt-3 lang-en">[AP] Preprints</div><div class="subheading mb-3 mt-3 lang-fr">[AP] Preprints</div></span>
-        <span id="pubTH"><div class="subheading mb-3 mt-3 lang-en">[TH] Dissertations</div><div class="subheading mb-3 mt-3 lang-fr">[TH] Thèse</div></span>
-        <span id="pubINV"><div class="subheading mb-3 mt-3 lang-en">[INV] Invited Talks</div><div class="subheading mb-3 mt-3 lang-fr">[INV] Conférences invitées</div></span>
-        <span id="pubPV"><div class="subheading mb-3 mt-3 lang-en">[PV] Popularization</div><div class="subheading mb-3 mt-3 lang-fr">[PV] Publications et communications de vulgarisation</div></span>
-
-      </div>
-    </section>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="vendor/jquery.isotope.min.js"></script>
-  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.js"></script>
-
-</body>
-
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>LASTIG - Charly Bernard</title>
+      <!-- Bootstrap core CSS -->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom fonts for this template -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i">
+      <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+      <link rel="stylesheet" href="vendor/academicons/css/academicons.min.css"/>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+      <!-- Custom styles for this template -->
+      <link href="css/animate.css" rel="stylesheet">
+      <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+      <link href="css/resume.css" rel="stylesheet">
+      <link href="css/extras.css" rel="stylesheet">
+      <!-- scripts on load -->
+      <script src="vendor/d3/d3.min.js"></script>
+      <script src="js/reviewing.js" charset="utf-8"></script>
+      <script src="js/hal.js" charset="utf-8"></script>
+   </head>
+   <body id="page-top" onload="reviewingVis('reviewing.json'); getPublicationsAuthor('charly-bernard');">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+         <select class="selectpicker" data-width="fit">
+            <option data-content='<span class="flag-icon flag-icon-us"></span>'>English</option>
+            <option data-content='<span class="flag-icon flag-icon-fr"></span>'>Français</option>
+         </select>
+         <a class="nav-link text-muted subheading" href="/website">LASTIG</a>
+         <a class="nav-link text-muted subheading" href="/strudel">STRUDEL</a>
+         <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Charly Bernard</span>
+            <!--
+               <span class="d-none d-lg-block">
+                 <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/xxx.png" alt="">
+               </span>
+               -->
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger lang-en" href="#about">About</a>
+                  <a class="nav-link js-scroll-trigger lang-fr" href="#about">Présentation</a>
+               </li>
+               <!--
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger lang-en" href="#interest">Research Interests</a>
+                    <a class="nav-link js-scroll-trigger lang-fr" href="#interest">Sujets de recherche</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger lang-en" href="#news">News</a>
+                    <a class="nav-link js-scroll-trigger lang-fr" href="#news">Actualités</a>
+                  </li>
+                        -->
+               <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger lang-en" href="#experience">Experience</a>
+                  <a class="nav-link js-scroll-trigger lang-fr" href="#experience">Parcours professionnel</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger lang-en" href="#education">Education</a>
+                  <a class="nav-link js-scroll-trigger lang-fr" href="#education">Formation</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger lang-en" href="#publications">Publications</a>
+                  <a class="nav-link js-scroll-trigger lang-fr" href="#publications">Publications</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger lang-en" href="#projects">Projects</a>
+                  <a class="nav-link js-scroll-trigger lang-fr" href="#projects">Projets</a>
+               </li>
+               <!--
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger lang-en" href="#other">Other research activities</a>
+                    <a class="nav-link js-scroll-trigger lang-fr" href="#other">Autres activités de recherche</a>
+                  </li>
+                  -->
+            </ul>
+         </div>
+      </nav>
+      <div class="container-fluid p-0">
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+         <div class="w-100">
+            <h1 class="mb-0">Charly
+               <span class="text-primary">Bernard</span>
+            </h1>
+            <div class="subheading mb-5">73 avenue de Paris · 94165 Saint-Mandé CEDEX ·
+               <a>charly.bernard@ign.fr</a>
+            </div>
+            <p class="lead mb-5 lang-en">PhD student in Computer Science: Sciences and Technologies of Geographic Information</p>
+            <p class="lead mb-5 lang-en">Member of the <a href="/strudel">STRUDEL</a> research team</p>
+            <p class="lead mb-5 lang-en">
+               My PhD thesis aims at building a geo-historical dataset of addresses and thoroughfares from multiple sources which are heterogeneous (old maps, directories, archive document, web data such as Wikidata...). As this diversity implies a fragmentary and accumulative integration of data, it involves some challenges such as data structuring (how to model addresses, geographical entities and their temporal evolution ?), data matching and source conflicts. The application case is about Paris from the end of the XVIIIth to the middle of the XXth century.
+            </p>
+            <p class="lead mb-5 lang-fr">Doctorant en Informatique : Sciences et Technologies de l'Information Géographique</p>
+            <p class="lead mb-5 lang-fr">Membre de l'équipe <a href="">STRUDEL</a></p>
+            <p class="lead mb-5 lang-fr">
+               La thèse de doctorat sur laquelle je travaille consiste à construire un jeu de données géo-historiques d'adresses et de voies de communication à partir de sources multiples et hétérogènes (cartes anciennes, annuaires, documents d'archives, données web comme Wikidata...). Cette diversité implique une intégration fragmentaire et cumulative des données, ce qui pose des défis tels que la structuration des données (comment modéliser les adresses, les entités géographiques et leur évolution temporelle ?), l'appariement des données et la gestion des conflits entre sources. Le cas d'application concerne la ville de Paris de la fin du XVIIIe au milieu du XXe siècle.
+            </p>
+            <div class="social-icons">
+               <!--
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="#">
+                    <i class="ai ai-researchgate"></i>
+                  </a>
+                  -->
+               <a href="https://github.com/charlybernard">
+               <i class="fab fa-github"></i>
+               </a>
+               <!--
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="ai ai-google-scholar"></i>
+                  </a>
+                  <a href="#">
+                    <i class="ai ai-publons"></i>
+                  </a>
+                  -->
+               <a href="https://orcid.org/0009-0003-8170-3671">
+               <i class="ai ai-orcid"></i>
+               </a>
+               <a href="https://cv.archives-ouvertes.fr/charly-bernard">
+               <i class="ai"><img src="img/icons/hal-b2.svg" width=45px/></i>
+               </a>
+            </div>
+         </div>
+      </section>
+      <hr class="m-0" />
+      <section id="experience" class="section appear clearfix">
+         <div class="container mar-bot50">
+            <div class="row mar-bot40">
+               <div class="col-lg-12 text-center">
+                  <h2 class="section-heading lang-en">Experience</h2>
+                  <h2 class="section-heading lang-fr">
+                     Expérience
+                  </h2>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <ul class="timeline">
+                     <li>
+                        <img class="timeline-image" src="img/2023_phd.png"/ alt="Example d'un plan d'une rue avec les numéros d'immeuble.">
+                        <div class="timeline-panel">
+                           <div class="timeline-heading lang-en">
+                              <h4>January 2023 - Current</h4>
+                              <h4 class="subheading">
+                                 PhD student - LASTIG, Université Gustave Eiffel, IGN/ENSG
+                              </h4>
+                           </div>
+                           <div class="timeline-heading lang-fr">
+                              <h4>Janvier 2023 - </h4>
+                              <h4 class="subheading">
+                                 Doctorant - LASTIG, Université Gustave Eiffel, IGN/ENSG
+                              </h4>
+                           </div>
+                           <div class="timeline-body">
+                              <p class="text-muted lang-en">
+                                 From multiple and highly heterogeneous sources to an open geo-historical address repository
+                              </p>
+                              <p class="text-muted lang-fr">
+                                 De sources multiples fortement hétérogènes à un référentiel géo-historique d'adresses ouvert
+                              </p>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <img class="timeline-image" src="img/2020_soduco.png"/ alt="Outil d'édition de données géographiques.">
+                        <div class="timeline-panel">
+                           <div class="timeline-heading lang-en">
+                              <h4>October 2019 - December 2022</h4>
+                              <h4 class="subheading">
+                                 Survey Engineer - LASTIG, Université Gustave Eiffel, IGN/ENSG
+                              </h4>
+                           </div>
+                           <div class="timeline-heading lang-fr">
+                              <h4>Octobre 2019 - Décembre 2022</h4>
+                              <h4 class="subheading">
+                                 Ingénieur d'étude - LASTIG, Université Gustave Eiffel, IGN/ENSG
+                              </h4>
+                           </div>
+                           <div class="timeline-body">
+                              <p class="text-muted lang-en">
+                                 Developped a web collaborative tool to validate and edit geospatial data.
+                              </p>
+                              <p class="text-muted lang-fr">
+                                 Développement d'un outil web collaboratif pour l'édition et la validation de données géographiques.
+                              </p>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="timeline-inverted">
+                        <img class="timeline-image" src="img/2019_sncf.png"/ alt="Schéma modélisant un itinéraire simple.">
+                        <div class="timeline-panel">
+                           <div class="timeline-heading lang-en">
+                              <h4>April - September 2019</h4>
+                              <h4 class="subheading">
+                                 Intern - Direction of Research and Innovation at SNCF
+                              </h4>
+                           </div>
+                           <div class="timeline-heading lang-fr">
+                              <h4>Avril - Septembre 2019</h4>
+                              <h4 class="subheading">
+                                 Stage de fin d'étude - Innovation & recherche SNCF
+                              </h4>
+                           </div>
+                           <div class="timeline-body">
+                              <p class="text-muted lang-en">
+                                 Production of road maps including benchmarks. Development of a tool to automate the production of roadmaps incorporating landmarks to enable passengers to find their destination around or within SNCF stations thanks to interactive maps displaying an itinerary between a point of origin and a point of destination, enriched by salient descriptions of the environment.
+                              </p>
+                              <p class="text-muted lang-fr">
+                                 Travail sur la production des feuilles de routes intégrant des repères. Développement d'un outil d'automatisation de la production de cartes routières intégrant des points de repère pour permettre aux voyageurs de trouver leur destination autour ou à l'intérieur des gares SNCF grâce à des cartes interactives affichant un itinéraire entre un point d'origine et un point de destination, enrichi par des descriptions saillantes de l'environnement.
+                              </p>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <img class="timeline-image" src="img/2018_internship.png"/ alt="Nuage de points modélisant un bâtiment.">
+                        <div class="timeline-panel">
+                           <div class="timeline-heading lang-en">
+                              <h4>May - August 2018</h4>
+                              <h4 class="subheading">
+                                 Intern - School of Engineering, Newcastle University
+                              </h4>
+                           </div>
+                           <div class="timeline-heading lang-fr">
+                              <h4>Mai - août 2018</h4>
+                              <h4 class="subheading">
+                                 Stage - School of Engineering, Université de Newcastle
+                              </h4>
+                           </div>
+                           <div class="timeline-body">
+                              <p class="text-muted lang-en">
+                                 Work about application and validation of technologies for Photogrammetry. 3D digital reconstruction of objects for the Discovery Museum for the Great Exhibition of the North and preliminary study about the potential of single photon airborne laser scanning technology. <a href="http://www.eurosdr.net/sites/default/files/images/inline/02_bernard.pdf">Presented this study</a> at a <a href="http://www.eurosdr.net/workshops/eurosdr-one-day-workshop-single-photon-and-geiger-mode-lidar">EuroSDR workshop</a> in March 2019
+                              </p>
+                              <p class="text-muted lang-fr">
+                                 Travail sur l'application et la validation des technologies autour la photogrammétrie. Reconstitution numérique 3D d'objets pour le Discovery Museum à l'occasion de la Great Exhibition of the North et étude préliminaire d'une technologie Single-Photon Lidar. <a href="http://www.eurosdr.net/sites/default/files/images/inline/02_bernard.pdf">Présentation de cette étude</a> lors d'un <a href="http://www.eurosdr.net/workshops/eurosdr-one-day-workshop-single-photon-and-geiger-mode-lidar">workshop d'EuroSDR</a> en mars 2019
+                              </p>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+      <hr class="m-0" />
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+         <div class="w-100">
+            <h2 class="mb-5 lang-en">Education</h2>
+            <h2 class="mb-5 lang-fr">Formation</h2>
+            <div
+               class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+               <div class="resume-content">
+                  <h3 class="mb-0">Université Gustave Eiffel</h3>
+                  <div class="subheading mb-3 lang-en">PHD</div>
+                  <div class="subheading mb-3 lang-fr">Doctorat</div>
+                  <div class="lang-en">From multiple and highly heterogeneous sources to an open geo-historical address repository</div>
+                  <div class="lang-fr">De sources multiples fortement hétérogènes à un référentiel géo-historique d'adresses ouvert</div>
+               </div>
+               <div class="resume-date text-md-right">
+                  <span class="text-primary lang-en">January 2023 - current</span>
+                  <span class="text-primary lang-fr">Janvier 2023 - présent</span>
+               </div>
+            </div>
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+               <div class="resume-content">
+                  <h3 class="mb-0">École Nationale des Sciences Géographiques (ENSG)</h3>
+                  <div class="subheading mb-3 lang-en">Engineering school</div>
+                  <div class="subheading mb-3 lang-fr">Cycle ingénieurs</div>
+                  <div class="lang-en">Geographical Information Science with emphasis in spatial analysis and cartography</div>
+                  <div class="lang-fr">Géomatique avec spécialisation en SIG, analyse spatiale et représentation cartographique</div>
+               </div>
+               <div class="resume-date text-md-right">
+                  <span class="text-primary lang-en">September 2016 - September 2019</span>
+                  <span class="text-primary lang-fr">Septembre 2016 - Septembre 2019</span>
+               </div>
+            </div>
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+               <div class="resume-content">
+                  <h3 class="mb-0">ENSG / Université Paris 1 / Université Paris 7</h3>
+                  <div class="subheading mb-3 lang-en">Carthagéo master</div>
+                  <div class="subheading mb-3 lang-fr">Master Carthagéo</div>
+                  <div class="lang-en">Master in Geographical Information Systems, spatial analysis and cartography</div>
+                  <div class="lang-fr">Master en SIG, analyse spatiale et représentation cartographique</div>
+               </div>
+               <div class="resume-date text-md-right">
+                  <span class="text-primary lang-en">September 2018 - September 2019</span>
+                  <span class="text-primary lang-fr">Septembre 2018 - Septembre 2019</span>
+               </div>
+            </div>
+         </div>
+      </section>
+      <hr class="m-0" />
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="publications">
+         <div class="w-100">
+            <h2 class="mb-5">Publications</h2>
+            <span id="pubACL">
+               <div class="subheading mb-3 mt-3 lang-en">[ACL] Journals</div>
+               <div class="subheading mb-3 mt-3 lang-fr">[ACL] Revues répertoriées par l'HCERES</div>
+            </span>
+            <span id="pubACLN">
+               <div class="subheading mb-3 mt-3 lang-en">[ACLN] Journals</div>
+               <div class="subheading mb-3 mt-3 lang-fr">[ACLN] Revues non répertoriées</div>
+            </span>
+            <span id="pubASCL">
+               <div class="subheading mb-3 mt-3 lang-en">[ASCL] Others</div>
+               <div class="subheading mb-3 mt-3 lang-fr">[ASCL] Revues sans comité de lecture</div>
+            </span>
+            <span id="pubACTI">
+               <div class="subheading mb-3 mt-3 lang-en">[ACTI] Conferences</div>
+               <div class="subheading mb-3 mt-3 lang-fr">[ACTI] Conférences internationales</div>
+            </span>
+            <span id="pubACTN">
+               <div class="subheading mb-3 mt-3 lang-en">[ACTN] Conferences</div>
+               <div class="subheading mb-3 mt-3 lang-fr">[ACTN] Conférences nationales</div>
+            </span>
+            <span id="pubCOM">
+               <div class="subheading mb-3 mt-3 lang-en">[COM] Conferences</div>
+               <div class="subheading mb-3 mt-3 lang-fr">[COM] Communications orales</div>
+            </span>
+            <span id="pubOS">
+               <div class="subheading mb-3 mt-3 lang-en">[OS] Books and Chapters</div>
+               <div class="subheading mb-3 mt-3 lang-fr">[OS] Ouvrages ou chapitres d'ouvrages scientifiques</div>
+            </span>
+            <span id="pubDO">
+               <div class="subheading mb-3 mt-3 lang-en">[DO] Books and Chapters</div>
+               <div class="subheading mb-3 mt-3 lang-fr">[DO] Directions d'ouvrages scientifiques</div>
+            </span>
+            <span id="pubAFF">
+               <div class="subheading mb-3 mt-3 lang-en">[AFF] Posters</div>
+               <div class="subheading mb-3 mt-3 lang-fr">[AFF] Posters</div>
+            </span>
+            <span id="pubAP">
+               <div class="subheading mb-3 mt-3 lang-en">[AP] Preprints</div>
+               <div class="subheading mb-3 mt-3 lang-fr">[AP] Preprints</div>
+            </span>
+            <span id="pubTH">
+               <div class="subheading mb-3 mt-3 lang-en">[TH] Dissertations</div>
+               <div class="subheading mb-3 mt-3 lang-fr">[TH] Thèse</div>
+            </span>
+            <span id="pubINV">
+               <div class="subheading mb-3 mt-3 lang-en">[INV] Invited Talks</div>
+               <div class="subheading mb-3 mt-3 lang-fr">[INV] Conférences invitées</div>
+            </span>
+            <span id="pubPV">
+               <div class="subheading mb-3 mt-3 lang-en">[PV] Popularization</div>
+               <div class="subheading mb-3 mt-3 lang-fr">[PV] Publications et communications de vulgarisation</div>
+            </span>
+         </div>
+      </section>
+      <hr class="m-0" />
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
+         <div class="container">
+            <div class="row text-center title">
+               <h2 class="lang-en">Projects</h2>
+               <h2 class="lang-fr">Projets</h2>
+            </div>
+            <div class="subheading mb-3 lang-en">On-going and past research projects</div>
+            <div class="subheading mb-3 lang-fr">Projets partenariaux en cours et terminés</div>
+            <div class="row projects">
+               <div class="col-md-4">
+                  <div class="project">
+                     <div class="icon-holder">
+                        <img src="img/icons/soduco.png" alt="" class="icon">
+                     </div>
+                     <h4 class="heading"><a href="https://soduco.github.io/">SoDuCo</a></h4>
+                     <p class="description lang-fr">Étude de l'évolution des structures spatiales urbaines en relation avec les pratiques sociales et professionnelles de la population: application à l'évolution de Paris de 1789 à 1950.</p>
+                     <p class="description lang-en">Study of the evolution of urban spatial structures with respect to the social and professional practices of the population: application to the evolution of Paris from 1789 to 1950.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="cut cut-bottom"></div>
+      </section>
+      <hr class="m-0" />
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- Plugin JavaScript -->
+      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+      <script src="vendor/jquery.isotope.min.js"></script>
+      <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+      <!-- Custom scripts for this template -->
+      <script src="js/resume.js"></script>
+   </body>
 </html>
