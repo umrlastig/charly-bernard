@@ -35,7 +35,7 @@ var getPublications = function(halId, parent, params){
 
   // Open a new connection, using the GET request on the URL endpoint
   var url = halApi(halId)+params;
-  // console.log(url);
+   console.log(url);
   request.open('GET', url, true);
   request.onload = function () {
     var docs = JSON.parse(this.response).response.docs;
@@ -56,11 +56,11 @@ const publication_options = {
   pubPV:  "&fq=popularLevel_s:1",
   pubASCL:"&fq=popularLevel_s:0&fq=docType_s:\"ART\"&fq=peerReviewing_s:0",
   pubACL: "&fq=popularLevel_s:0&fq=docType_s:\"ART\"&fq=peerReviewing_s:1&fq=audience_s:2",
-  pubACLN:"&fq=popularLevel_s:0&fq=docType_s:\"ART\"&fq=peerReviewing_s:1&fq=audience_s:(NOT 2)",
+  pubACLN:"&fq=popularLevel_s:0&fq=docType_s:\"ART\"&fq=peerReviewing_s:1&fq=audience_s:(1 OR 3)",
   pubINV: "&fq=popularLevel_s:0&fq=docType_s:\"COMM\"&fq=invitedCommunication_s:1",
   pubCOM: "&fq=popularLevel_s:0&fq=docType_s:\"COMM\"&fq=invitedCommunication_s:0&fq=proceedings_s:0",
   pubACTI:"&fq=popularLevel_s:0&fq=docType_s:\"COMM\"&fq=invitedCommunication_s:0&fq=proceedings_s:1&fq=audience_s:2",
-  pubACTN:"&fq=popularLevel_s:0&fq=docType_s:\"COMM\"&fq=invitedCommunication_s:0&fq=proceedings_s:1&fq=audience_s:(NOT 2)",
+  pubACTN:"&fq=popularLevel_s:0&fq=docType_s:\"COMM\"&fq=invitedCommunication_s:0&fq=proceedings_s:1&fq=audience_s:(1 OR 3)",
   pubOS:  "&fq=popularLevel_s:0&fq=docType_s:\"COUV\"",
   pubDO:  "&fq=popularLevel_s:0&fq=docType_s:\"DOUV\"",
   pubAP:  "&fq=popularLevel_s:0&fq=docType_s:(\"REPORT\" OR \"UNDEFINED\")",
@@ -247,4 +247,3 @@ var createPub = function(doc, parent){
   parent.appendChild(listElement);
   jQuery('lang-en').hide();
 }
-
